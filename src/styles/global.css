@@ -1,3 +1,11 @@
+:root {
+  --brown: #774c46;
+  --md-brown: #8b6361;
+  --light-rose: #f3ccc7;
+  --rose: #dbb4af;
+  --md-rose: #aa8783;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +14,64 @@
 }
 
 body {
-  background-color: #f3ccc7;
+  background-color: var(--light-rose);
 }
 
 h1 {
-  margin: 48px;
+  margin: 32px;
   font-family: 'Yeseva One', cursive;
-  color: #774c46;
+  color: var(--brown);
+}
+h5 {
+  margin: 8px;
+  font-family: 'Yeseva One', cursive;
+  color: var(--brown);
 }
 
-.headName {
+.name {
   display: flex;
   justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container div {
+  flex-direction: row;
+  margin: 10px;
+}
+
+.avatar {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: var(--light-rose);
+  border: 2px solid var(--brown);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.avatar::before {
+  content: '';
+  width: 32px;
+  height: 32px;
+  background-color: var(--md-brown);
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 15px);
+  top: 24px;
+}
+.avatar::after {
+  content: '';
+  width: 65px;
+  height: 50px;
+  background-color: var(--md-brown);
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 32px);
+  top: 64px;
 }
