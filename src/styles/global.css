@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica, sans-serif';
+}
+
+body {
+  background-color: #f3ccc7;
+}
+
+h1 {
+  margin: 48px;
+  font-family: 'Yeseva One', cursive;
+  color: #774c46;
+}
+
+.headName {
+  display: flex;
+  justify-content: center;
+}
